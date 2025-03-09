@@ -9,6 +9,7 @@ body {
 }
 
 .container {
+    position: relative;
     display: flex;
     flex-flow: column wrap;
     background: #fff;
@@ -45,7 +46,7 @@ input:focus {
 }
 
 ul {
-    margin-top: 20px;
+    margin: 20px;
     
 }
 
@@ -75,4 +76,18 @@ button.delete {
     font-size: 1.2em;
     cursor: pointer;
     margin-left: 5px;
+}
+
+@media (max-width: 440px) {
+    input,
+    ul {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 380px) {
+    input,
+    ul {
+        max-width: 200px;
+    }
 }
